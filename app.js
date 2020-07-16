@@ -19,18 +19,7 @@
  * @param {character[]} s
  * @return {void} Do not return anything, modify s in-place instead.
  */
-var reverseString = function(s) {
-  // return s.reverse(); // lets pretend that I don't have access to a built in method called reverse. 
-//array of seperate strings, mash them together 
-// then after flipping the string, move them apart 
-  let stringPutTogether = s.join(""); // joining string together
-  let newString = ''; // establishing new string
-  console.log(stringPutTogether)
-  for(let i= s.length - 1; i >= 0; i--){ // iterating from the end moving to the left
-    newString += s[i];   // adding the individual characters 
-  }
-  let seperateStringAgain = newString.split(""); // seperating the string again.
-  console.log(seperateStringAgain,"seperateStringAGain")
-  return seperateStringAgain;  
+const reverseString = (s) => {
+ return s.reverse();
 };
 
